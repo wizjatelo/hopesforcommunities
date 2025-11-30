@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs — Hopes for Communities</title>
+    <meta name="description" content="Explore our programs: school fee sponsorship, mentorship, vocational training, and our educational center project.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #0891b2;
+            --secondary-color: #fbbf24;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 bg-[var(--primary-color)] text-white rounded-lg font-semibold hover:opacity-90 transition-opacity;
+        }
+        
+        .btn-secondary {
+            @apply px-6 py-3 bg-[var(--secondary-color)] text-[var(--text-dark)] rounded-lg font-semibold hover:opacity-90 transition-opacity;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/ProgramDetail.js"></script>
+    <script type="text/babel" src="programs-app.js"></script>
+</body>
+</html>
