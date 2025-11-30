@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hopes for Communities — Transforming Lives Through Education & Mentorship</title>
+    <meta name="description" content="Faith-based CBO providing education, mentorship, and vocational training to vulnerable children. Support school fees, sponsor a child, or partner with us.">
+    <meta name="keywords" content="community based organization, school sponsorship, mentorship Kenya, vocational training for youth, faith-based charity">
+    
+    <meta property="og:title" content="Hopes for Communities — Transforming Lives Through Education & Mentorship">
+    <meta property="og:description" content="Faith-based CBO providing education, mentorship, and vocational training to vulnerable children. Support school fees, sponsor a child, or partner with us.">
+    
+    <meta name="twitter:title" content="Hopes for Communities — Transforming Lives Through Education & Mentorship">
+    <meta name="twitter:description" content="Faith-based CBO providing education, mentorship, and vocational training to vulnerable children. Support school fees, sponsor a child, or partner with us.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #0891b2;
+            --secondary-color: #fbbf24;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+        }
+    }
+
+    @layer base {
+        body {
+            @apply font-sans text-[var(--text-dark)] bg-[var(--background)];
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-bold;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 bg-[var(--primary-color)] text-white rounded-lg font-semibold hover:opacity-90 transition-opacity;
+        }
+        
+        .btn-secondary {
+            @apply px-6 py-3 bg-[var(--secondary-color)] text-[var(--text-dark)] rounded-lg font-semibold hover:opacity-90 transition-opacity;
+        }
+        
+        .btn-outline {
+            @apply px-6 py-3 border-2 border-[var(--primary-color)] text-[var(--primary-color)] rounded-lg font-semibold hover:bg-[var(--primary-color)] hover:text-white transition-all;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/StatsBar.js"></script>
+    <script type="text/babel" src="components/ProgramCard.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
