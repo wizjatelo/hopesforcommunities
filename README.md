@@ -1,4 +1,4 @@
-# Hopes for Communities - Official Website
+# Hopes for Communitiestrial - Official Website
 
 ![Hopes for Communities](./logo.png)
 
